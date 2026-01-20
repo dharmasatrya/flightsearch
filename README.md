@@ -355,4 +355,3 @@ API specs and testing tools are in the `docs/` folder:
 
 - **OpenAPI/Swagger**: `docs/swagger.yaml` - import into [Swagger Editor](https://editor.swagger.io) or your preferred tool
 - **Postman Collection**: `docs/postman_collection.json` - import into Postman for quick API testing
-- **Application Flow**: `docs/APPLICATION_FLOW.md` - request flow diagrams and architecture overview
