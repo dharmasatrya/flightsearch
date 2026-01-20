@@ -1,0 +1,145 @@
+{
+  "flight_offers": [
+    {
+      "offer_id": "QZ-001",
+      "marketing_carrier": {
+        "airline_code": "QZ",
+        "airline_name": "AirAsia Indonesia"
+      },
+      "flight_num": "QZ 7520",
+      "from": {
+        "iata": "CGK",
+        "city_name": "Jakarta"
+      },
+      "to": {
+        "iata": "DPS",
+        "city_name": "Bali"
+      },
+      "depart_at": "2025-12-15T06:30:00+07:00",
+      "arrive_at": "2025-12-15T09:15:00+08:00",
+      "duration_hours": 1.75,
+      "direct_flight": true,
+      "stops": [],
+      "price_idr": 650000,
+      "seats_left": 85,
+      "travel_class": "economy",
+      "equipment": "Airbus A320",
+      "perks": [],
+      "baggage_info": "Cabin baggage only (7kg). Checked baggage available for purchase."
+    },
+    {
+      "offer_id": "QZ-002",
+      "marketing_carrier": {
+        "airline_code": "QZ",
+        "airline_name": "AirAsia Indonesia"
+      },
+      "flight_num": "QZ 7522",
+      "from": {
+        "iata": "CGK",
+        "city_name": "Jakarta"
+      },
+      "to": {
+        "iata": "DPS",
+        "city_name": "Bali"
+      },
+      "depart_at": "2025-12-15T09:45:00+07:00",
+      "arrive_at": "2025-12-15T12:30:00+08:00",
+      "duration_hours": 1.75,
+      "direct_flight": true,
+      "stops": [],
+      "price_idr": 720000,
+      "seats_left": 62,
+      "travel_class": "economy",
+      "equipment": "Airbus A320neo",
+      "perks": ["extra_legroom_available"],
+      "baggage_info": "Cabin baggage only (7kg). Checked baggage available for purchase."
+    },
+    {
+      "offer_id": "QZ-003",
+      "marketing_carrier": {
+        "airline_code": "QZ",
+        "airline_name": "AirAsia Indonesia"
+      },
+      "flight_num": "QZ 7524",
+      "from": {
+        "iata": "CGK",
+        "city_name": "Jakarta"
+      },
+      "to": {
+        "iata": "DPS",
+        "city_name": "Bali"
+      },
+      "depart_at": "2025-12-15T13:00:00+07:00",
+      "arrive_at": "2025-12-15T15:50:00+08:00",
+      "duration_hours": 1.83,
+      "direct_flight": true,
+      "stops": [],
+      "price_idr": 680000,
+      "seats_left": 75,
+      "travel_class": "economy",
+      "equipment": "Airbus A320",
+      "perks": [],
+      "baggage_info": "Cabin baggage only (7kg). Checked baggage available for purchase."
+    },
+    {
+      "offer_id": "QZ-004",
+      "marketing_carrier": {
+        "airline_code": "QZ",
+        "airline_name": "AirAsia Indonesia"
+      },
+      "flight_num": "QZ 7526",
+      "from": {
+        "iata": "CGK",
+        "city_name": "Jakarta"
+      },
+      "to": {
+        "iata": "DPS",
+        "city_name": "Bali"
+      },
+      "depart_at": "2025-12-15T17:15:00+07:00",
+      "arrive_at": "2025-12-15T20:00:00+08:00",
+      "duration_hours": 1.75,
+      "direct_flight": true,
+      "stops": [],
+      "price_idr": 780000,
+      "seats_left": 48,
+      "travel_class": "economy",
+      "equipment": "Airbus A320neo",
+      "perks": ["extra_legroom_available"],
+      "baggage_info": "Cabin baggage only (7kg). Checked baggage available for purchase."
+    },
+    {
+      "offer_id": "QZ-005",
+      "marketing_carrier": {
+        "airline_code": "QZ",
+        "airline_name": "AirAsia Indonesia"
+      },
+      "flight_num": "QZ 7528",
+      "from": {
+        "iata": "CGK",
+        "city_name": "Jakarta"
+      },
+      "to": {
+        "iata": "DPS",
+        "city_name": "Bali"
+      },
+      "depart_at": "2025-12-15T07:00:00+07:00",
+      "arrive_at": "2025-12-15T12:45:00+08:00",
+      "duration_hours": 4.75,
+      "direct_flight": false,
+      "stops": [
+        {
+          "stop_airport": "SUB",
+          "stop_city": "Surabaya",
+          "stop_duration_mins": 120
+        }
+      ],
+      "price_idr": 550000,
+      "seats_left": 32,
+      "travel_class": "economy",
+      "equipment": "Airbus A320",
+      "perks": [],
+      "baggage_info": "Cabin baggage only (7kg). Checked baggage available for purchase."
+    }
+  ]
+}

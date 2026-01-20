@@ -1,0 +1,168 @@
+{
+  "data": {
+    "availableFlights": [
+      {
+        "flightId": "ID-001",
+        "operatingCarrier": {
+          "carrierCode": "ID",
+          "carrierName": "Batik Air"
+        },
+        "flightNo": "ID 6570",
+        "departureInfo": {
+          "airportCode": "CGK",
+          "cityName": "Jakarta",
+          "terminalNo": "2F",
+          "departureTime": "2025-12-15T07:00:00+0700"
+        },
+        "arrivalInfo": {
+          "airportCode": "DPS",
+          "cityName": "Bali",
+          "terminalNo": "D",
+          "arrivalTime": "2025-12-15T09:45:00+0800"
+        },
+        "travelTime": "1h 45m",
+        "numberOfStops": 0,
+        "fare": {
+          "totalPrice": 1180000,
+          "currencyCode": "IDR"
+        },
+        "seatsAvailable": 35,
+        "cabinType": "economy",
+        "aircraftType": "Airbus A320",
+        "includedServices": ["meal", "entertainment"],
+        "baggageAllowance": "7kg cabin, 20kg checked"
+      },
+      {
+        "flightId": "ID-002",
+        "operatingCarrier": {
+          "carrierCode": "ID",
+          "carrierName": "Batik Air"
+        },
+        "flightNo": "ID 6572",
+        "departureInfo": {
+          "airportCode": "CGK",
+          "cityName": "Jakarta",
+          "terminalNo": "2F",
+          "departureTime": "2025-12-15T10:30:00+0700"
+        },
+        "arrivalInfo": {
+          "airportCode": "DPS",
+          "cityName": "Bali",
+          "terminalNo": "D",
+          "arrivalTime": "2025-12-15T13:20:00+0800"
+        },
+        "travelTime": "1h 50m",
+        "numberOfStops": 0,
+        "fare": {
+          "totalPrice": 1280000,
+          "currencyCode": "IDR"
+        },
+        "seatsAvailable": 28,
+        "cabinType": "economy",
+        "aircraftType": "Boeing 737 MAX 8",
+        "includedServices": ["meal", "entertainment", "wifi"],
+        "baggageAllowance": "7kg cabin, 20kg checked"
+      },
+      {
+        "flightId": "ID-003",
+        "operatingCarrier": {
+          "carrierCode": "ID",
+          "carrierName": "Batik Air"
+        },
+        "flightNo": "ID 6574",
+        "departureInfo": {
+          "airportCode": "CGK",
+          "cityName": "Jakarta",
+          "terminalNo": "2F",
+          "departureTime": "2025-12-15T13:45:00+0700"
+        },
+        "arrivalInfo": {
+          "airportCode": "DPS",
+          "cityName": "Bali",
+          "terminalNo": "D",
+          "arrivalTime": "2025-12-15T16:30:00+0800"
+        },
+        "travelTime": "1h 45m",
+        "numberOfStops": 0,
+        "fare": {
+          "totalPrice": 1150000,
+          "currencyCode": "IDR"
+        },
+        "seatsAvailable": 42,
+        "cabinType": "economy",
+        "aircraftType": "Airbus A320",
+        "includedServices": ["meal", "entertainment"],
+        "baggageAllowance": "7kg cabin, 20kg checked"
+      },
+      {
+        "flightId": "ID-004",
+        "operatingCarrier": {
+          "carrierCode": "ID",
+          "carrierName": "Batik Air"
+        },
+        "flightNo": "ID 6576",
+        "departureInfo": {
+          "airportCode": "CGK",
+          "cityName": "Jakarta",
+          "terminalNo": "2F",
+          "departureTime": "2025-12-15T17:30:00+0700"
+        },
+        "arrivalInfo": {
+          "airportCode": "DPS",
+          "cityName": "Bali",
+          "terminalNo": "D",
+          "arrivalTime": "2025-12-15T20:15:00+0800"
+        },
+        "travelTime": "1h 45m",
+        "numberOfStops": 0,
+        "fare": {
+          "totalPrice": 1320000,
+          "currencyCode": "IDR"
+        },
+        "seatsAvailable": 18,
+        "cabinType": "economy",
+        "aircraftType": "Boeing 737 MAX 8",
+        "includedServices": ["meal", "entertainment", "wifi"],
+        "baggageAllowance": "7kg cabin, 23kg checked"
+      },
+      {
+        "flightId": "ID-005",
+        "operatingCarrier": {
+          "carrierCode": "ID",
+          "carrierName": "Batik Air"
+        },
+        "flightNo": "ID 6578",
+        "departureInfo": {
+          "airportCode": "CGK",
+          "cityName": "Jakarta",
+          "terminalNo": "2F",
+          "departureTime": "2025-12-15T08:00:00+0700"
+        },
+        "arrivalInfo": {
+          "airportCode": "DPS",
+          "cityName": "Bali",
+          "terminalNo": "D",
+          "arrivalTime": "2025-12-15T13:00:00+0800"
+        },
+        "travelTime": "4h 0m",
+        "numberOfStops": 1,
+        "connectionPoints": [
+          {
+            "airport": "SUB",
+            "city": "Surabaya",
+            "layoverMinutes": 90
+          }
+        ],
+        "fare": {
+          "totalPrice": 980000,
+          "currencyCode": "IDR"
+        },
+        "seatsAvailable": 25,
+        "cabinType": "economy",
+        "aircraftType": "Airbus A320",
+        "includedServices": ["meal"],
+        "baggageAllowance": "7kg cabin, 20kg checked"
+      }
+    ]
+  }
+}

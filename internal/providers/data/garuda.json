@@ -1,0 +1,181 @@
+{
+  "flights": [
+    {
+      "flight_id": "GA-001",
+      "airline": {
+        "code": "GA",
+        "name": "Garuda Indonesia"
+      },
+      "flight_number": "GA 410",
+      "departure": {
+        "airport": "CGK",
+        "city": "Jakarta",
+        "terminal": "3",
+        "time": "2025-12-15T06:00:00+07:00"
+      },
+      "arrival": {
+        "airport": "DPS",
+        "city": "Bali",
+        "terminal": "D",
+        "time": "2025-12-15T08:50:00+08:00"
+      },
+      "duration_minutes": 110,
+      "stops": 0,
+      "price": {
+        "amount": 1450000,
+        "currency": "IDR"
+      },
+      "available_seats": 45,
+      "cabin_class": "economy",
+      "aircraft": "Boeing 737-800",
+      "amenities": ["wifi", "meal", "entertainment"],
+      "baggage": {
+        "carry_on": 7,
+        "checked": 20
+      }
+    },
+    {
+      "flight_id": "GA-002",
+      "airline": {
+        "code": "GA",
+        "name": "Garuda Indonesia"
+      },
+      "flight_number": "GA 412",
+      "departure": {
+        "airport": "CGK",
+        "city": "Jakarta",
+        "terminal": "3",
+        "time": "2025-12-15T09:30:00+07:00"
+      },
+      "arrival": {
+        "airport": "DPS",
+        "city": "Bali",
+        "terminal": "D",
+        "time": "2025-12-15T12:15:00+08:00"
+      },
+      "duration_minutes": 105,
+      "stops": 0,
+      "price": {
+        "amount": 1650000,
+        "currency": "IDR"
+      },
+      "available_seats": 32,
+      "cabin_class": "economy",
+      "aircraft": "Airbus A330-300",
+      "amenities": ["wifi", "meal", "entertainment", "power_outlet"],
+      "baggage": {
+        "carry_on": 7,
+        "checked": 23
+      }
+    },
+    {
+      "flight_id": "GA-003",
+      "airline": {
+        "code": "GA",
+        "name": "Garuda Indonesia"
+      },
+      "flight_number": "GA 414",
+      "departure": {
+        "airport": "CGK",
+        "city": "Jakarta",
+        "terminal": "3",
+        "time": "2025-12-15T14:00:00+07:00"
+      },
+      "arrival": {
+        "airport": "DPS",
+        "city": "Bali",
+        "terminal": "D",
+        "time": "2025-12-15T16:45:00+08:00"
+      },
+      "duration_minutes": 105,
+      "stops": 0,
+      "price": {
+        "amount": 1550000,
+        "currency": "IDR"
+      },
+      "available_seats": 18,
+      "cabin_class": "economy",
+      "aircraft": "Boeing 737-800",
+      "amenities": ["wifi", "meal", "entertainment"],
+      "baggage": {
+        "carry_on": 7,
+        "checked": 20
+      }
+    },
+    {
+      "flight_id": "GA-004",
+      "airline": {
+        "code": "GA",
+        "name": "Garuda Indonesia"
+      },
+      "flight_number": "GA 416",
+      "departure": {
+        "airport": "CGK",
+        "city": "Jakarta",
+        "terminal": "3",
+        "time": "2025-12-15T18:30:00+07:00"
+      },
+      "arrival": {
+        "airport": "DPS",
+        "city": "Bali",
+        "terminal": "D",
+        "time": "2025-12-15T21:20:00+08:00"
+      },
+      "duration_minutes": 110,
+      "stops": 0,
+      "price": {
+        "amount": 1750000,
+        "currency": "IDR"
+      },
+      "available_seats": 52,
+      "cabin_class": "economy",
+      "aircraft": "Airbus A330-300",
+      "amenities": ["wifi", "meal", "entertainment", "power_outlet"],
+      "baggage": {
+        "carry_on": 7,
+        "checked": 23
+      }
+    },
+    {
+      "flight_id": "GA-005",
+      "airline": {
+        "code": "GA",
+        "name": "Garuda Indonesia"
+      },
+      "flight_number": "GA 418",
+      "departure": {
+        "airport": "CGK",
+        "city": "Jakarta",
+        "terminal": "3",
+        "time": "2025-12-15T07:15:00+07:00"
+      },
+      "arrival": {
+        "airport": "DPS",
+        "city": "Bali",
+        "terminal": "D",
+        "time": "2025-12-15T12:30:00+08:00"
+      },
+      "duration_minutes": 195,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "SUB",
+          "city": "Surabaya",
+          "duration": 60
+        }
+      ],
+      "price": {
+        "amount": 1250000,
+        "currency": "IDR"
+      },
+      "available_seats": 28,
+      "cabin_class": "economy",
+      "aircraft": "Boeing 737-800",
+      "amenities": ["meal", "entertainment"],
+      "baggage": {
+        "carry_on": 7,
+        "checked": 20
+      }
+    }
+  ]
+}

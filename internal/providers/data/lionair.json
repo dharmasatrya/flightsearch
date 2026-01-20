@@ -1,0 +1,201 @@
+{
+  "results": [
+    {
+      "id": "JT-001",
+      "carrier": {
+        "iata": "JT",
+        "full_name": "Lion Air"
+      },
+      "flight_code": "JT 510",
+      "origin": {
+        "code": "CGK",
+        "name": "Jakarta",
+        "gate": "1A"
+      },
+      "destination": {
+        "code": "DPS",
+        "name": "Bali",
+        "gate": "B2"
+      },
+      "schedule": {
+        "departure": "2025-12-15T05:30:00",
+        "arrival": "2025-12-15T08:15:00",
+        "timezone": "Asia/Jakarta"
+      },
+      "flight_time": 105,
+      "is_direct": true,
+      "stop_count": 0,
+      "pricing": {
+        "total": 850000,
+        "currency_code": "IDR"
+      },
+      "seats_remaining": 65,
+      "class": "economy",
+      "plane_type": "Boeing 737-900ER",
+      "services": ["snack"],
+      "baggage": {
+        "cabin": "7 kg",
+        "hold": "20 kg"
+      }
+    },
+    {
+      "id": "JT-002",
+      "carrier": {
+        "iata": "JT",
+        "full_name": "Lion Air"
+      },
+      "flight_code": "JT 512",
+      "origin": {
+        "code": "CGK",
+        "name": "Jakarta",
+        "gate": "1B"
+      },
+      "destination": {
+        "code": "DPS",
+        "name": "Bali",
+        "gate": "B3"
+      },
+      "schedule": {
+        "departure": "2025-12-15T08:45:00",
+        "arrival": "2025-12-15T11:35:00",
+        "timezone": "Asia/Jakarta"
+      },
+      "flight_time": 110,
+      "is_direct": true,
+      "stop_count": 0,
+      "pricing": {
+        "total": 920000,
+        "currency_code": "IDR"
+      },
+      "seats_remaining": 42,
+      "class": "economy",
+      "plane_type": "Boeing 737-800",
+      "services": ["snack"],
+      "baggage": {
+        "cabin": "7 kg",
+        "hold": "20 kg"
+      }
+    },
+    {
+      "id": "JT-003",
+      "carrier": {
+        "iata": "JT",
+        "full_name": "Lion Air"
+      },
+      "flight_code": "JT 514",
+      "origin": {
+        "code": "CGK",
+        "name": "Jakarta",
+        "gate": "1A"
+      },
+      "destination": {
+        "code": "DPS",
+        "name": "Bali",
+        "gate": "B2"
+      },
+      "schedule": {
+        "departure": "2025-12-15T12:00:00",
+        "arrival": "2025-12-15T14:50:00",
+        "timezone": "Asia/Jakarta"
+      },
+      "flight_time": 110,
+      "is_direct": true,
+      "stop_count": 0,
+      "pricing": {
+        "total": 880000,
+        "currency_code": "IDR"
+      },
+      "seats_remaining": 55,
+      "class": "economy",
+      "plane_type": "Boeing 737-900ER",
+      "services": ["snack"],
+      "baggage": {
+        "cabin": "7 kg",
+        "hold": "15 kg"
+      }
+    },
+    {
+      "id": "JT-004",
+      "carrier": {
+        "iata": "JT",
+        "full_name": "Lion Air"
+      },
+      "flight_code": "JT 516",
+      "origin": {
+        "code": "CGK",
+        "name": "Jakarta",
+        "gate": "1C"
+      },
+      "destination": {
+        "code": "DPS",
+        "name": "Bali",
+        "gate": "B1"
+      },
+      "schedule": {
+        "departure": "2025-12-15T16:30:00",
+        "arrival": "2025-12-15T19:20:00",
+        "timezone": "Asia/Jakarta"
+      },
+      "flight_time": 110,
+      "is_direct": true,
+      "stop_count": 0,
+      "pricing": {
+        "total": 950000,
+        "currency_code": "IDR"
+      },
+      "seats_remaining": 38,
+      "class": "economy",
+      "plane_type": "Boeing 737-800",
+      "services": ["snack", "beverage"],
+      "baggage": {
+        "cabin": "7 kg",
+        "hold": "20 kg"
+      }
+    },
+    {
+      "id": "JT-005",
+      "carrier": {
+        "iata": "JT",
+        "full_name": "Lion Air"
+      },
+      "flight_code": "JT 518",
+      "origin": {
+        "code": "CGK",
+        "name": "Jakarta",
+        "gate": "1B"
+      },
+      "destination": {
+        "code": "DPS",
+        "name": "Bali",
+        "gate": "B3"
+      },
+      "schedule": {
+        "departure": "2025-12-15T06:15:00",
+        "arrival": "2025-12-15T11:45:00",
+        "timezone": "Asia/Jakarta"
+      },
+      "flight_time": 210,
+      "is_direct": false,
+      "stop_count": 1,
+      "stopovers": [
+        {
+          "airport_code": "JOG",
+          "city_name": "Yogyakarta",
+          "wait_time": 75
+        }
+      ],
+      "pricing": {
+        "total": 720000,
+        "currency_code": "IDR"
+      },
+      "seats_remaining": 22,
+      "class": "economy",
+      "plane_type": "Boeing 737-800",
+      "services": ["snack"],
+      "baggage": {
+        "cabin": "7 kg",
+        "hold": "15 kg"
+      }
+    }
+  ]
+}

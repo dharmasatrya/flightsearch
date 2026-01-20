@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "flight-search-api",
+		"name": "Flight Search API",
+		"description": "API collection for the Flight Search System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Health Check",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/health",
+							"host": ["{{baseUrl}}"],
+							"path": ["health"]
+						},
+						"description": "Check if the server is running and healthy"
+					},
+					"response": [
+						{
+							"name": "Healthy Response",
+							"status": "OK",
+							"code": 200,
+							"body": "{\n    \"status\": \"ok\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flight Search",
+			"item": [
+				{
+					"name": "Basic Search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 1,\n    \"cabin_class\": \"economy\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Basic one-way flight search from Jakarta (CGK) to Bali (DPS)"
+					},
+					"response": []
+				},
+				{
+					"name": "Search with Price Filter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 1,\n    \"cabin_class\": \"economy\",\n    \"filters\": {\n        \"price_min\": 500000,\n        \"price_max\": 1500000\n    },\n    \"sort_by\": \"price\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Search with price range filter (IDR 500,000 - 1,500,000)"
+					},
+					"response": []
+				},
+				{
+					"name": "Search Direct Flights Only",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 1,\n    \"cabin_class\": \"economy\",\n    \"filters\": {\n        \"max_stops\": 0\n    },\n    \"sort_by\": \"duration\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Search for direct flights only (no stops), sorted by shortest duration"
+					},
+					"response": []
+				},
+				{
+					"name": "Search with Airline Filter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 1,\n    \"cabin_class\": \"economy\",\n    \"filters\": {\n        \"airlines\": [\"GA\", \"ID\"]\n    },\n    \"sort_by\": \"price\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Search for Garuda Indonesia (GA) and Batik Air (ID) flights only"
+					},
+					"response": []
+				},
+				{
+					"name": "Search with Time Window",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 1,\n    \"cabin_class\": \"economy\",\n    \"filters\": {\n        \"departure_time_min\": \"06:00\",\n        \"departure_time_max\": \"12:00\"\n    },\n    \"sort_by\": \"departure\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Search for morning flights (6:00 AM - 12:00 PM)"
+					},
+					"response": []
+				},
+				{
+					"name": "Search with Best Value Sort",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 1,\n    \"cabin_class\": \"economy\",\n    \"filters\": {\n        \"max_stops\": 0,\n        \"price_max\": 1500000\n    },\n    \"sort_by\": \"best_value\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Search sorted by best value score (weighted combination of price, duration, and stops)"
+					},
+					"response": []
+				},
+				{
+					"name": "Search with All Filters",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 2,\n    \"cabin_class\": \"economy\",\n    \"filters\": {\n        \"price_min\": 500000,\n        \"price_max\": 2000000,\n        \"max_stops\": 1,\n        \"airlines\": [\"GA\", \"JT\", \"ID\", \"QZ\"],\n        \"departure_time_min\": \"05:00\",\n        \"departure_time_max\": \"20:00\",\n        \"max_duration\": 300\n    },\n    \"sort_by\": \"best_value\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Search with all available filters applied"
+					},
+					"response": []
+				},
+				{
+					"name": "Round Trip Search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"return_date\": \"2025-12-20\",\n    \"passengers\": 2,\n    \"cabin_class\": \"economy\",\n    \"filters\": {\n        \"max_stops\": 0\n    },\n    \"sort_by\": \"price\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Round trip search with outbound and return flights"
+					},
+					"response": []
+				},
+				{
+					"name": "Search Sorted by Arrival Time",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"origin\": \"CGK\",\n    \"destination\": \"DPS\",\n    \"departure_date\": \"2025-12-15\",\n    \"passengers\": 1,\n    \"cabin_class\": \"economy\",\n    \"sort_by\": \"arrival\",\n    \"sort_order\": \"asc\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/flights/search",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "flights", "search"]
+						},
+						"description": "Search sorted by earliest arrival time"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
